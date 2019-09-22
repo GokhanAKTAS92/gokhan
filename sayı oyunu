@@ -1,0 +1,14 @@
+from random import randint
+rand = randint(1, 100)
+while True:
+    sayi = int(input("1 ile 100 arasında değer girin:"))
+    if sayi == rand:
+        print("Rastele seçilen sayı {0}!".format(rand))
+        print("Tebrikler, sayıyı doğru tahmin etmeyi başardınız...")
+        break
+    elif sayi < rand:
+        print("Daha Yüksek Bir Sayı Girin.")
+        continue
+    elif sayi > rand:
+        print("Daha Düşük Bir Sayı Girin.")
+        continue
